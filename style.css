@@ -7,13 +7,29 @@
 body{
     display: flex;
     height: 100vh;
-    background: #060AB2;
+    background: #F5DB13;
+}
+
+.container{
+  position:absolute;
+   background: red;
+   text-align: center;
+   font-size: 30px;
+   color: white;
+   width: 100%;
+   
+   height: 200px;
+}
+
+#logo{
+  max-width: 300px;
+  margin: 20px;
 }
 
 .memory-game{
     margin: auto;
-    width: 640px;
-    height: 640px;
+    width: 1000px;
+    height: 540px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
@@ -24,6 +40,7 @@ body{
     width: calc(25% - 10px);
     height: calc(33.333% - 10px);
     margin: 5px;
+    top: 100px;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0,0,0,.3);
     transform: scale(1);

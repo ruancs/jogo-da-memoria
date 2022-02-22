@@ -8,3 +8,7 @@
   - [ ] Adicionar timer durante a partida
   - [ ] Botão de start e reiniciar
   
+  screenshot:
+  ![image](https://user-images.githubusercontent.com/19825224/155191519-23bd5c4f-222e-46e9-a827-53bd742ab158.png)
+
+  

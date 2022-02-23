@@ -7,23 +7,47 @@
 body{
     display: flex;
     height: 100vh;
-    background: #F5DB13;
+    background: #F28F16;
 }
 
 .container{
   position:absolute;
-   background: red;
+  background: linear-gradient(180deg, #ff6739 0%, #f28f16 100%);
    text-align: center;
    font-size: 30px;
    color: white;
-   width: 100%;
-   
+   width: 100%;   
    height: 200px;
+}
+
+a{
+  text-decoration: none;
+  margin-left: 10px;
+  color: white;
+}
+
+.footer{  
+  position: absolute;    
+  top:100%;
+  text-decoration: none;
+  text-align:center;
+  font-size: 12px;
+  color: white;  
+  margin-top:120px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  width: 100%;   
+  height: 30px;
 }
 
 #logo{
   max-width: 300px;
   margin: 20px;
+}
+
+#logo:hover{
+  -moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .memory-game{

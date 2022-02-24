@@ -13,6 +13,7 @@ function flipCard(){
     if (!hasFlippedCard){
         hasFlippedCard = true;
         firstCard = this;
+        
         return;
     }
 
@@ -25,7 +26,9 @@ function flipCard(){
 
 function checkforMatch(){
     if (firstCard.dataset.pokemon === secondCard.dataset.pokemon){
+        cardCheckOk();
         disableCards();
+        
         return;
     }
 
@@ -61,6 +64,11 @@ function resetBoard(){
     card.style.order = ramdomPos;
     });
     })();
+
+function cardCheckOk(){
+    firstCard.style.backgroudColor = "red";
+    
+}    
     
 
 cards.forEach(card => card.addEventListener('click', flipCard));

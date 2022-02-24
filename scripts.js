@@ -66,8 +66,14 @@ function resetBoard(){
     })();
 
 function cardCheckOk(){
-    firstCard.style.backgroudColor = "red";
+
     
+
+        firstCard.querySelector(".front-face").style.backgroundColor = "#80b918";
+        secondCard.querySelector(".front-face").style.backgroundColor = "#80b918";
+
+   
+   
 }    
     
 

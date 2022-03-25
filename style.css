@@ -31,28 +31,29 @@ h1{
   z-index: 2;
 }
 
-#start{  
-    background: red;
-    font-family: inherit;
-    padding: 0.6em 1.3em;
-    font-weight: 900;
-    font-size: 18px;
-    color:white;
-    border: 2px solid black;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em white;
-   }
-   
-   #start:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em white;
-   }
-   
-   #start:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-   }
+#start{
+  cursor: pointer;
+  background: red;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  color:white;
+  border: 2px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em white;
 
+}
+   
+#start:hover {
+transform: translate(-0.05em, -0.05em);
+box-shadow: 0.15em 0.15em white;
+}
+
+#start:active {
+transform: translate(0.05em, 0.05em);
+box-shadow: 0.05em 0.05em;
+}
 
 @keyframes fadein{
   from{opacity: 0;}

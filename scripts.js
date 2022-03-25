@@ -1,6 +1,8 @@
+//tela de inicio---
+
 const headBegin = document.querySelector('.container');
 const footerBegin = document.querySelector('.footer');
-  const game = document.querySelector('.memory-game');
+const game = document.querySelector('.memory-game');
 
 function gameBegin(){
   
@@ -19,11 +21,16 @@ function startGame(){
 
 }
 
+
+//logica do jogo da memoria--
+
 const cards = document.querySelectorAll('.memory-card');
 var sound = document.getElementById("flipin");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+const finish = false;
+var contador = 0;
 
 
 
@@ -51,6 +58,7 @@ function flipCard(){
 function checkforMatch(){
     if (firstCard.dataset.pokemon === secondCard.dataset.pokemon){
         cardCheckOk();
+        contaMatch();
         disableCards();
         
         return;
@@ -90,12 +98,25 @@ function resetBoard(){
     })();
 
 function cardCheckOk(){ 
-    
     firstCard.querySelector(".front-face").style.backgroundColor = "#80b918";
     secondCard.querySelector(".front-face").style.backgroundColor = "#80b918";
-}    
+
+}
+
+function contaMatch(){
+  contador ++;
+  if (contador == 6){
+    alert("Meus parabéns! Voce é um gênio");
+  }
+}
+
+
     
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+
+
+//---------cronometro------------//
 
 let hour = 0;
 let minute = 0;
@@ -128,8 +149,6 @@ function reset() {
   document.getElementById('second').innerText = '00';
  // document.getElementById('millisecond').innerText = '00';
 }
-
-//---------cronometro------------//
 
 function timer() {
   if ((millisecond += 10) == 1000) {

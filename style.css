@@ -166,3 +166,30 @@ a{
     transform: rotateY(180deg);
   }
 
+@media screen and (max-width: 800px){
+
+  .chrono{
+    height: 60px;
+  }
+  
+  
+ .clock{
+   
+   font-size: 25px;
+ }
+
+ .clock::before{
+   
+   font-size: 20px;
+
+ }
+
+ #logo{
+   width: 250px;
+ }
+ .container{
+   justify-content: center;
+   padding-right: 20px;
+  
+ }
+}

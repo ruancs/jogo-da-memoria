@@ -52,7 +52,7 @@ h1{
     transform: translate(0.05em, 0.05em);
     box-shadow: 0.05em 0.05em;
    }
-}
+
 
 @keyframes fadein{
   from{opacity: 0;}
@@ -60,6 +60,10 @@ h1{
 }
 
 .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position:absolute;
   background: linear-gradient(180deg, #ff6739 0%, #f28f16 100%);
    text-align: center;
@@ -70,7 +74,14 @@ h1{
 }
 
 .chrono{   
-  text-align: center;
+  display: flex;
+  height: 80px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;  
+  justify-items: center;
+  background-color: red;
+ 
 }
 .clock{
   color:white;
@@ -111,10 +122,10 @@ a{
 
 
 .memory-game{
+    margin-top: 200px;
     margin: auto;
     width: 1000px;
     height: 540px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     perspective: 1000px;

@@ -12,7 +12,7 @@ function gameBegin(){
 
 function startGame(){
   document.querySelector("#gamestart").style.display = "none";
-  headBegin.style.display = "block";
+  headBegin.style.display = "flex";
   footerBegin.style.display = "block";
   game.style.display = "flex";
   reset();

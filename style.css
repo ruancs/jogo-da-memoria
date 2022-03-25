@@ -20,6 +20,15 @@ body{
    height: 200px;
 }
 
+.chrono{   
+  text-align: center;
+}
+.clock{
+  color:white;
+  font-size:35px;
+}
+
+
 a{
   text-decoration: none;
   margin-left: 10px;
@@ -48,7 +57,9 @@ a{
   -moz-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
+  transition: 0.5s;
 }
+
 
 .memory-game{
     margin: auto;

@@ -10,6 +10,55 @@ body{
     background: #F28F16;
 }
 
+h1{
+  animation: fadein 1s;
+  text-align: center;  
+}
+
+#gamestart {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 2rem;  
+  display: flex; /* none play game */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  z-index: 2;
+}
+
+#start{  
+    background: red;
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    color:white;
+    border: 2px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em white;
+   }
+   
+   #start:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em white;
+   }
+   
+   #start:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+   }
+}
+
+@keyframes fadein{
+  from{opacity: 0;}
+  to {opacity:1;}
+}
+
 .container{
   position:absolute;
   background: linear-gradient(180deg, #ff6739 0%, #f28f16 100%);

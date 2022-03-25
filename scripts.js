@@ -1,8 +1,32 @@
+const headBegin = document.querySelector('.container');
+const footerBegin = document.querySelector('.footer');
+  const game = document.querySelector('.memory-game');
+
+function gameBegin(){
+  
+  headBegin.style.display = "none";
+  footerBegin.style.display = "none";
+  game.style.display = "none";
+ 
+}
+
+function startGame(){
+  document.querySelector("#gamestart").style.display = "none";
+  headBegin.style.display = "block";
+  footerBegin.style.display = "block";
+  game.style.display = "flex";
+  reset();
+
+}
+
 const cards = document.querySelectorAll('.memory-card');
 var sound = document.getElementById("flipin");
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
+
+
+
 
 function flipCard(){
     if (lockBoard) return;

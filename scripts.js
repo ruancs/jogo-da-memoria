@@ -15,7 +15,7 @@ function startGame(){
   headBegin.style.display = "flex";
   footerBegin.style.display = "block";
   game.style.display = "flex";
-  reset();
+  start();
 
 }
 
@@ -89,11 +89,10 @@ function resetBoard(){
     });
     })();
 
-function cardCheckOk(){    
-
-        firstCard.querySelector(".front-face").style.backgroundColor = "#80b918";
-        secondCard.querySelector(".front-face").style.backgroundColor = "#80b918";   
-   
+function cardCheckOk(){ 
+    
+    firstCard.querySelector(".front-face").style.backgroundColor = "#80b918";
+    secondCard.querySelector(".front-face").style.backgroundColor = "#80b918";
 }    
     
 cards.forEach(card => card.addEventListener('click', flipCard));
@@ -104,10 +103,11 @@ let second = 0;
 let millisecond = 0;
 
 let cron;
-start()
-document.form_main.start.onclick = () => start();
+
+
+/*document.form_main.start.onclick = () => start();
 document.form_main.pause.onclick = () => pause();
-document.form_main.reset.onclick = () => reset();
+document.form_main.reset.onclick = () => reset();*/
 
 function start() {
   pause();
@@ -122,11 +122,11 @@ function reset() {
   hour = 0;
   minute = 0;
   second = 0;
-  millisecond = 0;
+  //millisecond = 0;
   document.getElementById('hour').innerText = '00';
   document.getElementById('minute').innerText = '00';
   document.getElementById('second').innerText = '00';
-  document.getElementById('millisecond').innerText = '00';
+ // document.getElementById('millisecond').innerText = '00';
 }
 
 //---------cronometro------------//
@@ -147,7 +147,7 @@ function timer() {
   document.getElementById('hour').innerText = returnData(hour);
   document.getElementById('minute').innerText = returnData(minute);
   document.getElementById('second').innerText = returnData(second);
-  document.getElementById('millisecond').innerText = returnData(millisecond);
+  //document.getElementById('millisecond').innerText = returnData(millisecond);
 }
 
 function returnData(input) {

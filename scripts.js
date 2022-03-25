@@ -129,6 +129,8 @@ function reset() {
   document.getElementById('millisecond').innerText = '00';
 }
 
+//---------cronometro------------//
+
 function timer() {
   if ((millisecond += 10) == 1000) {
     millisecond = 0;

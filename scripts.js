@@ -108,6 +108,7 @@ function contaMatch(){
   contador ++;
   if (contador == 6){
     venceu.style.display = "flex";
+    pause();
   }
 }
 

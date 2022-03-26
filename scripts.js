@@ -3,6 +3,7 @@
 const headBegin = document.querySelector('.container');
 const footerBegin = document.querySelector('.footer');
 const game = document.querySelector('.memory-game');
+const venceu = document.querySelector("#youwin");
 
 function gameBegin(){
   
@@ -106,7 +107,7 @@ function cardCheckOk(){
 function contaMatch(){
   contador ++;
   if (contador == 6){
-    alert("Meus parabéns! Voce é um gênio");
+    venceu.style.display = "flex";
   }
 }
 

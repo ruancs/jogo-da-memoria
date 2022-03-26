@@ -44,6 +44,27 @@ h1{
   box-shadow: 0.1em 0.1em white;
 
 }
+
+#youwin{
+  position: absolute !important;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  z-index: 2;
+}
+
+#youwinmsg{
+  animation: fadein 1s;
+  position: relative;
+  color: white;
+  margin-bottom: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
    
 #start:hover {
 transform: translate(-0.05em, -0.05em);
